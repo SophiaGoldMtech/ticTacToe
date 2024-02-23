@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("brickwall.png");
+}
+
+h1 {
+  font-size: 75px;
+}
+
+.container {
+  width: 610px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 5px black solid;
+}
+
+.tile {
+  height: 200px;
+  width: 200px;
+  border: 10px black solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-size: 150px;
+}
+
+.fa-x,
+.fa-o {
+  display: none;
+}
+
+.x > .fa-x {
+  display: initial;
+  color: red;
+}
+
+.o > .fa-o {
+  display: initial;
+  color: blue;
+}
